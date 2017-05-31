@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Weather App</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/weatherAppCSS.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+
+
+
+
+
+        <h1 class="text-center">The Weather Page</h1>
+        <hr>
+
+
+
+        <form class="form-inline text-center" role="form">
+
+            <div class="form-group">
+                <label for="add-zipcode" class="col-md-4 control-label" id="right">
+                       <h5>Zipcode</h5>
+                   </label>
+                <div class="col-md-2">
+                    <input type="text" class="form-control" id="addZipcode" placeholder="Zipcode" required/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="units" class="col-md-4 control-label" id="right">
+                       <h5>Units</h5>
+                   </label>
+                <div class="col-md-2">
+                    <select class="form-control" id="unitOption">
+                           <option>imperial</option>
+                           <option>metric</option>
+                       </select>
+
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-4">
+                    <button type="button" id="add-button" class="btn btn-default">
+                                   Get Weather
+                      </button>
+                </div>
+            </div>
+
+        </form>
+
+        <hr>
+
+        <div id="displayWeather">
+            <h2>Current Conditions in <span id="location"></span></h2>
+
+            <div class="row">
+                <div class="col-md-2">
+                    <ul style="list-style: none">
+                        <li id="description"></li>
+                        <li id="currentWeatherIcon"></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2">
+                    <ul style="list-style: none">
+                        <li id="temperature"></li>
+                        <li id="humidity"></li>
+                        <li id="wind"></li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2>Five Day Forecast</h2>
+            <div class="row">
+
+
+                <div class="col-md-1" id="sevenDayForecast">
+                    <ul>
+                        <li id="day1_1">
+                        </li>
+                        <li id="day1_2">
+                        </li>
+                        <li id="day1_3">
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-1" id="sevenDayForecast">
+                    <ul>
+                        <li id="day2_1">
+                        </li>
+                        <li id="day2_2">
+                        </li>
+                        <li id="day2_3">
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-1" id="sevenDayForecast">
+                    <ul>
+                        <li id="day3_1">
+                        </li>
+                        <li id="day3_2">
+                        </li>
+                        <li id="day3_3">
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-1" id="sevenDayForecast">
+                    <ul>
+                        <li id="day4_1">
+                        </li>
+                        <li id="day4_2">
+                        </li>
+                        <li id="day4_3">
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-1" id="sevenDayForecast">
+                    <ul>
+                        <li id="day5_1">
+                        </li>
+                        <li id="day5_2">
+                        </li>
+                        <li id="day5_3">
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-1" id="sevenDayForecast">
+                    <ul>
+                        <li id="day6_1">
+                        </li>
+                        <li id="day6_2">
+                        </li>
+                        <li id="day6_3">
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-1" id="sevenDayForecast">
+                    <ul>
+                        <li id="day7_1">
+                        </li>
+                        <li id="day7_2">
+                        </li>
+                        <li id="day7_3">
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div id="invisibleLine"></div>
+    </div>
+
+
+
+
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/weather_app.js"></script>
+
+</body>
+
+
+
+</html>

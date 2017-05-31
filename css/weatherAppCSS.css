@@ -1,0 +1,13 @@
+body{
+    background-color: blue;
+    color: white;
+}
+#sevenDayForecast{
+    margin-right:5.5%;
+}
+ul{
+    list-style: none;
+}
+#right{
+text-align: right;
+}
